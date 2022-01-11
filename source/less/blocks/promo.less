@@ -1,0 +1,77 @@
+.promo {
+  background-color: @black;
+  color: @white-grey;
+  padding: 57px 0 101px;
+  background-image: url("../../img/bg-rhinoceros.png");
+  background-repeat: no-repeat;
+  background-position: 0 70%;
+
+  &__title {
+    font-weight: @font-weight-5;
+    font-size: 33px;
+    line-height: 90%;
+    /* or 30px */
+    letter-spacing: -0.04em;
+    color: @white-grey;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-weight: @font-weight-5;
+    font-size: 13px;
+    line-height: 140%;
+    /* or 18px */
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+  }
+
+  &__wrap-text {
+    margin-left: auto;
+    max-width: 168px;
+    width: 100%;
+  }
+
+  &__wrap-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    padding: 10px 16px;
+    color: @white-grey;
+    background-color: transparent;
+    border: 2px solid @white-grey;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: @font-weight-5;
+    font-size: @font-size-base;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    letter-spacing: -0.04em;
+
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    &--color {
+      border: 2px solid;
+      border-image-source: @pink-gradient;
+      border-image-slice: 1;
+    }
+
+    &:first-child {
+      max-width: 117px;
+    }
+
+    &:nth-child(2) {
+      max-width: 136px;
+    }
+
+    &:last-child {
+      max-width: 102px;
+    }
+  }
+}

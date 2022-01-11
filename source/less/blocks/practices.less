@@ -1,0 +1,67 @@
+.practices {
+  background-color: @bg-black;
+  padding-bottom: 62px;
+
+  &__wrap-text {
+    background-image: url("../../img/arrow-grey.png");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 16px 77px;
+    padding: 145px 16px 110px;
+  }
+
+  .accordion {
+    background-color: transparent;
+    border-top: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+    border-left: none;
+    border-right: none;
+    color: @white;
+    cursor: pointer;
+    padding: 17px 0 23px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    position: relative;
+  }
+
+  .active.accordion {
+    border-bottom: none;
+  }
+
+
+  .panel {
+    padding: 0;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #A09F9E;
+  }
+
+  &__desc {
+    margin-bottom: 62px;
+  }
+
+  &__content {
+    padding: 36px 0 60px;
+  }
+
+  .accordion:after {
+    content: '';
+    background-image: url("../../img/arrow.png");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 17px;
+    position: absolute;
+    right: 0;
+    top: 17px;
+    transform: none;
+  }
+
+  .active.accordion:after {
+
+    transform: rotate(90deg);
+  }
+}
