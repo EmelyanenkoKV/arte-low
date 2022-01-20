@@ -3,15 +3,24 @@
   line-height: 130%;
   /* or 14px */
   letter-spacing: 0.08em;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
   padding: 4.5px;
 
   &--dark {
     color: @white;
   }
 
+  &--light {
+    color: @black;
+  }
+
   &__text-mark {
     background-color: @grey-dark;
+    padding: 1px 3px;
+  }
+
+  &__text-mark-light {
+    background-color: @black;
     padding: 1px 3px;
   }
 
@@ -20,6 +29,10 @@
 
     &--choose {
       color: @white;
+    }
+
+    &--choose-light {
+      color: @black;
     }
   }
 }
